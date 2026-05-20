@@ -1,17 +1,13 @@
 <template>
-  <div>
-    <h1>{{ nama }}</h1>
-    <p>Umur saya {{ umur }} tahun</p>
-  </div>
+  <ArrayAllData />
 </template>
 
 <script>
+import ArrayAllData from './components/ArrayAllData.vue'
+
 export default {
-  data() {
-    return {
-      nama: 'Luqman',
-      umur: 20
-    }
+  components: {
+    ArrayAllData
   }
 }
 </script>
