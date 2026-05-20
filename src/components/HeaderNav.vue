@@ -4,9 +4,24 @@
     <h2>My Vue App</h2>
 
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+     <li>
+        <a href="#" @click.prevent="$emit('gantiHalaman', 'home')">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="#" @click.prevent="$emit('gantiHalaman', 'about')">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a href="#" @click.prevent="$emit('gantiHalaman', 'contact')">
+          Contact
+        </a>
+      </li>
+
     </ul>
 
   </nav>

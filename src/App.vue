@@ -45,9 +45,17 @@ export default {
 
   <div>
 
-    <HeaderNav />
+    <!-- HEADER -->
+    <HeaderNav
+      @gantiHalaman="halaman = $event"
+    />
 
-    <HomePage />
+    <!-- HALAMAN -->
+    <HomePage v-if="halaman == 'home'" />
+
+    <AboutPage v-if="halaman == 'about'" />
+
+    <ContactPage v-if="halaman == 'contact'" />
 
   </div>
 
@@ -57,12 +65,22 @@ export default {
 
 import HeaderNav from './components/HeaderNav.vue'
 import HomePage from './components/HomePage.vue'
+import ContactPage from './components/ContactPage.vue'
+import AboutPage from './components/AboutPage.vue'
 
 export default {
 
   components: {
     HeaderNav,
-    HomePage
+    HomePage,
+    ContactPage,
+    AboutPage
+  },
+
+  data() {
+    return {
+      halaman: 'home'
+    }
   }
 
 }
