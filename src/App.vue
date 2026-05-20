@@ -12,7 +12,6 @@ export default {
 }
 </script> -->
 
-
 <!-- <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
@@ -40,15 +39,10 @@ export default {
 }
 </style> -->
 
-
 <template>
-
   <div>
-
     <!-- HEADER -->
-    <HeaderNav
-      @gantiHalaman="halaman = $event"
-    />
+    <HeaderNav @gantiHalaman="halaman = $event" />
 
     <!-- HALAMAN -->
     <HomePage v-if="halaman == 'home'" />
@@ -56,33 +50,27 @@ export default {
     <AboutPage v-if="halaman == 'about'" />
 
     <ContactPage v-if="halaman == 'contact'" />
-
   </div>
-
 </template>
 
 <script>
-
-import HeaderNav from './components/HeaderNav.vue'
-import HomePage from './components/HomePage.vue'
-import ContactPage from './components/ContactPage.vue'
-import AboutPage from './components/AboutPage.vue'
+import HeaderNav from "./components/HeaderNav.vue";
+import HomePage from "./components/HomePage.vue";
+import ContactPage from "./components/ContactPage.vue";
+import AboutPage from "./components/AboutPage.vue";
 
 export default {
-
   components: {
     HeaderNav,
     HomePage,
     ContactPage,
-    AboutPage
+    AboutPage,
   },
 
   data() {
     return {
-      halaman: 'home'
-    }
-  }
-
-}
-
+      halaman: "home",
+    };
+  },
+};
 </script>
