@@ -7,7 +7,7 @@ import ArrayAllData from './components/ArrayAllData.vue'
 
 export default {
   components: {
-    ArrayAllData
+      
   }
 }
 </script> -->
@@ -43,14 +43,15 @@ export default {
   <div>
     <!-- HEADER -->
     <HeaderNav @gantiHalaman="halaman = $event" />
-
     <!-- HALAMAN -->
     <HomePage v-if="halaman == 'home'" />
-
     <AboutPage v-if="halaman == 'about'" />
-
     <ContactPage v-if="halaman == 'contact'" />
+    <TodoList v-if="halaman == 'TodoList'" />
+    <ArrayAllData v-if="halaman == 'ArrayAllData'" />
+    <DataBinding v-if="halaman == 'DataBinding'" />
   </div>
+  
 </template>
 
 <script>
@@ -58,13 +59,13 @@ import HeaderNav from "./components/HeaderNav.vue";
 import HomePage from "./components/HomePage.vue";
 import ContactPage from "./components/ContactPage.vue";
 import AboutPage from "./components/AboutPage.vue";
+import TodoList from "./components/TodoList.vue";
+import ArrayAllData from "./components/ArrayAllData.vue";
+import DataBinding from "./components/DataBinding.vue";
 
 export default {
   components: {
-    HeaderNav,
-    HomePage,
-    ContactPage,
-    AboutPage,
+    HeaderNav,HomePage,ContactPage,AboutPage,TodoList,ArrayAllData,DataBinding
   },
 
   data() {

@@ -22,6 +22,24 @@
         </a>
       </li>
 
+       <li>
+        <a href="#" @click.prevent="$emit('gantiHalaman', 'TodoList')">
+          Todo List
+        </a>
+      </li>
+
+       <li>
+        <a href="#" @click.prevent="$emit('gantiHalaman', 'ArrayAllData')">
+          Array All Data
+        </a>
+      </li>
+
+      <li>
+        <a href="#" @click.prevent="$emit('gantiHalaman', 'DataBinding')">
+          Data Binding
+        </a>
+      </li>
+
     </ul>
 
   </nav>
