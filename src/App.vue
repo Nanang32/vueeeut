@@ -50,6 +50,7 @@ export default {
     <TodoList v-if="halaman == 'TodoList'" />
     <ArrayAllData v-if="halaman == 'ArrayAllData'" />
     <DataBinding v-if="halaman == 'DataBinding'" />
+    <Animation v-if="halaman == 'Animation'" />
   </div>
   
 </template>
@@ -62,10 +63,11 @@ import AboutPage from "./components/AboutPage.vue";
 import TodoList from "./components/TodoList.vue";
 import ArrayAllData from "./components/ArrayAllData.vue";
 import DataBinding from "./components/DataBinding.vue";
+import Animation from "./components/ExpAnimation.vue";
 
 export default {
   components: {
-    HeaderNav,HomePage,ContactPage,AboutPage,TodoList,ArrayAllData,DataBinding
+    HeaderNav,HomePage,ContactPage,AboutPage,TodoList,ArrayAllData,DataBinding,Animation
   },
 
   data() {

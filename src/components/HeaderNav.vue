@@ -39,6 +39,11 @@
           Data Binding
         </a>
       </li>
+        <li>
+          <a href="#" @click.prevent="$emit('gantiHalaman', 'Animation')">
+            Animation
+          </a> 
+        </li>
 
     </ul>
 
