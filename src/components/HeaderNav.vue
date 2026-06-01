@@ -39,11 +39,22 @@
           Data Binding
         </a>
       </li>
-        <li>
-          <a href="#" @click.prevent="$emit('gantiHalaman', 'Animation')">
-            Animation
-          </a> 
-        </li>
+      <li>
+        <a href="#" @click.prevent="$emit('gantiHalaman', 'Animation')">
+          Animation
+        </a> 
+      </li>
+       <li>
+        <a href="#" @click.prevent="$emit('gantiHalaman', 'Animation')">
+          Animation
+        </a> 
+      </li>
+       <li>
+        <a href="#" @click.prevent="$emit('gantiHalaman', 'GetFromApi')">
+          Get From Api
+        </a>
+      </li>
+
 
     </ul>
 
