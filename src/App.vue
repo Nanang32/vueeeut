@@ -52,8 +52,11 @@ export default {
     <DataBinding v-if="halaman == 'DataBinding'" />
     <Animation v-if="halaman == 'Animation'" />
     <GetFromApi v-if="halaman == 'GetFromApi'" />
+    <ExpString v-if="halaman == 'ExpString'" />
+    <StringBinding v-if="halaman == 'StringBinding'" />
+    <InputString v-if="halaman == 'InputString'" />
+    <StringToBtn v-if="halaman == 'StringToBtn'" />
   </div>
-  
 </template>
 
 <script>
@@ -66,10 +69,26 @@ import ArrayAllData from "./components/ArrayAllData.vue";
 import DataBinding from "./components/DataBinding.vue";
 import Animation from "./components/ExpAnimation.vue";
 import GetFromApi from "./components/GetFromApi.vue";
+import ExpString from "./components/ExpString.vue";
+import StringBinding from "./components/StringBinding.vue";
+import InputString from "./components/InputString.vue";
+import StringToBtn from "./components/StringToBtn.vue";
 
 export default {
   components: {
-    HeaderNav,HomePage,ContactPage,AboutPage,TodoList,ArrayAllData,DataBinding,Animation,GetFromApi
+    HeaderNav,
+    HomePage,
+    ContactPage,
+    AboutPage,
+    TodoList,
+    ArrayAllData,
+    DataBinding,
+    Animation,
+    GetFromApi,
+    ExpString,
+    StringBinding,
+    InputString,
+    StringToBtn,
   },
 
   data() {

@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <input v-model="nama" placeholder="Masukkan nama">
+  <div class="container">
+    <div>
+      <input v-model="nama" placeholder="Masukkan nama" />
 
-    <h2>Halo, {{ nama }}</h2>
+      <h2>Halo, {{ nama }}</h2>
+    </div>
   </div>
 </template>
 
@@ -10,8 +12,8 @@
 export default {
   data() {
     return {
-      nama: ''
-    }
-  }
-}
+      nama: "",
+    };
+  },
+};
 </script>

@@ -2,9 +2,7 @@
   <div>
     <h2>{{ status }}</h2>
 
-    <button @click="ubahStatus">
-      Ubah Status
-    </button>
+    <button @click="ubahStatus">Ubah Status</button>
   </div>
 </template>
 
@@ -12,14 +10,14 @@
 export default {
   data() {
     return {
-      status: 'Belum Login'
-    }
+      status: "Belum Login",
+    };
   },
 
   methods: {
     ubahStatus() {
-      this.status = 'Sudah Login'
-    }
-  }
-}
+      this.status = "Sudah Login";
+    },
+  },
+};
 </script>

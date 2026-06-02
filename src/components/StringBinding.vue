@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h2>{{ namaDepan + ' ' + namaBelakang }}</h2>
+  <div class="container">
+    <h2>{{ namaDepan + " " + namaBelakang }}</h2>
   </div>
 </template>
 
@@ -8,9 +8,9 @@
 export default {
   data() {
     return {
-      namaDepan: 'Luqman',
-      namaBelakang: 'Fanani'
-    }
-  }
-}
+      namaDepan: "Luqman",
+      namaBelakang: "Fanani",
+    };
+  },
+};
 </script>
