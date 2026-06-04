@@ -10,6 +10,12 @@
           <th>Nama</th>
           <th>Email</th>
           <th>Kota</th>
+          <th>Jalan</th>
+          <th>nomor rumah</th>
+          <th>titik kordinat</th>
+          <th>Kode Pos</th>
+          <th>Telepon</th>
+          <th>Perusahaan</th>
         </tr>
       </thead>
 
@@ -19,6 +25,12 @@
           <td>{{ user.name }}</td>
           <td>{{ user.email }}</td>
           <td>{{ user.address.city }}</td>
+          <td>{{ user.address.street }}</td>
+          <td>{{ user.address.suite }}</td>
+          <td>{{ user.address.geo.lat }}, {{ user.address.geo.lng }}</td>
+          <td>{{ user.address.zipcode }}</td>
+          <td>{{ user.phone }}</td>
+          <td>{{ user.company.name }}</td>
         </tr>
       </tbody>
 
